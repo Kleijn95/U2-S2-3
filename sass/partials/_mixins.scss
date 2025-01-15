@@ -1,0 +1,23 @@
+@mixin titleBig($size, $color, $font) {
+  font-size: $size;
+  color: $color;
+  font-family: $font;
+}
+
+@mixin floating(
+  $border-radius: 50%,
+
+  $box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2),
+  $border: 0px
+) {
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  border: $border;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+@mixin grid($value: 0) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

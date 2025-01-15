@@ -1,0 +1,35 @@
+@import "./partials/colors";
+@import "./partials/font";
+@import "./partials/reset";
+@import "./partials/spacing";
+@import "./partials/buttons";
+@import "./partials/mixins";
+@import "./partials/animations";
+
+h1 {
+  @include titleBig($size-5, coral, $font-sans-serif);
+}
+
+p {
+  color: $text-color;
+}
+
+.hero {
+  background-color: $bghero-color;
+}
+
+.headline {
+  background-color: $bgheader-color;
+}
+
+.hero img {
+  @include floating($border-radius, $box-shadow, 2px solid rgba(255, 255, 255, 0.8));
+}
+
+.container2 {
+  @include grid();
+}
+
+.container2 img {
+  @include floating($border-radius, 0 10px 15px rgba(0, 0, 0, 0.2), $border);
+}

@@ -1,0 +1,5 @@
+@each $key, $value in $bt-colors {
+  .btn-#{$key} {
+    background-color: $value;
+  }
+}
